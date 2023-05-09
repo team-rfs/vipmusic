@@ -47,7 +47,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="✯ 𝐆𝐫𝐨𝐮𝐩 ✯", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="✯ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✯", url=f"https://t.me/VIP_CREATORS",
+                text="✯ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✯", url=f"https://t.me/Katil_bots",
             )
         ],
         [
