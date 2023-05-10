@@ -26,6 +26,7 @@ from VipX.utils.decorators.language import LanguageStart
 from VipX.utils.formatters import get_readable_time
 from VipX.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
+from VipX.utils.command import commandvip
 
 loop = asyncio.get_running_loop()
 
@@ -306,7 +307,7 @@ async def welcome(client, message: Message):
             return
           
           
-@app.on_message(commandpro(["/alive", "vip"]) & ~filters.edited)
+@app.on_message(commandvip(["/alive", "vip"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/d075afa1e5331f3ca0117.jpg",
