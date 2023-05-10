@@ -202,7 +202,7 @@ async def start_comm(client, message: Message, _):
         if config.START_IMG_URL:
             try:
                 await message.reply_photo(
-                    photo=config.START_IMG_URL,
+                await message.reply_sticker("CAACAgQAAxkBAAIDhWP5SIDs4vEQOka4ugakEw3cBaU1AAKmEQACpvFxHogoqbI1f9ogLgQ")                    photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
@@ -303,3 +303,15 @@ async def welcome(client, message: Message):
             return
         except:
             return
+          
+          
+@app.on_message(commandpro(["/alive", "vip"]) & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://te.legra.ph/file/d075afa1e5331f3ca0117.jpg",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/katil_your_dad) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
+""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🌼 unique chat 💮", url=f"https://t.me/unique_chat_world")]]
+        ),
+    )
